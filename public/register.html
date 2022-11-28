@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Battleground X</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link rel="icon" href="images/favicon.ico?v=1.1">
+  <link rel="stylesheet" href="styles/register.css">
+  <script src="js/validate.js"></script>
+  <script src="js/captcha.js"></script>
+</head>
+
+<body onload="createCaptcha();">
+  <div class="w3-top op">
+    <div class="w3-row w3-large">
+      <div class="w3-col s3">
+        <div class=" w3-block">&nbsp;</div>
+      </div>
+      <div class="w3-col s3">
+        <a href="release.html" onmouseenter="" class="w3-button w3-block">Release date</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="trynow.html" class="w3-button w3-block">Try now</a>
+      </div>
+      <div class="w3-col s3">
+        <div class=" w3-block">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white custom">
+    <div class="w3-display-middle custom">
+      <h1 class="w3-xlarge w3-animate-top" style="color: #111">Please fill in the fields below for beta registrations.
+      </h1>
+      <form name="myForm" action="/sign_up" onsubmit="return validateForm()" method="POST">
+        <input class="w3-animate-top " type="text" name="username" placeholder="username">
+        <input class="w3-animate-top" type="text" name="email" placeholder="email">
+        <input class="w3-animate-top" type="password" name="password" placeholder="password">
+        <input class="w3-animate-top" type="password" name="repassword" placeholder="re-password">
+
+
+        <h1 id="captcha"></h1>
+        <input type="text" placeholder="captcha" id="cpatchaTextBox" />
+
+        <input class="button w3-animate-top" type="submit" value="Register Now">
+
+      </form>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
