@@ -13,17 +13,25 @@
   <script src="js/captcha.js"></script>
 </head>
 
+
 <body onload="createCaptcha();">
+{{#if message}}
+<script>
+    alert("Your username has been registered before. Please Try another registration.");
+</script>
+
+{{/if}}
+
   <div class="w3-top op">
     <div class="w3-row w3-large">
       <div class="w3-col s3">
         <div class=" w3-block">&nbsp;</div>
       </div>
       <div class="w3-col s3">
-        <a href="release.html" onmouseenter="" class="w3-button w3-block">Release date</a>
+        <a href="release" onmouseenter="" class="w3-button w3-block">Release date</a>
       </div>
       <div class="w3-col s3">
-        <a href="trynow.html" class="w3-button w3-block">Try now</a>
+        <a href="trynow" class="w3-button w3-block">Try now</a>
       </div>
       <div class="w3-col s3">
         <div class=" w3-block">&nbsp;</div>
