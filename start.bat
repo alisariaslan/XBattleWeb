@@ -1,2 +1,2 @@
-node main.js 192.168.1.101 80 mongodb://admin:a5134ba8@192.168.1.101:27017/battleground
+node main.js localhost 80 mongodb://admin:admin@127.0.0.1:27017/pakacraft -https openssl/key.pem openssl/cert.pem
 pause
