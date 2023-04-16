@@ -1,0 +1,9 @@
+.image_op {
+  opacity: .5;
+  transition: ease-in .5s;
+}
+
+.image_op:hover {
+  opacity: 1;
+  transition: ease-in .5s;
+}

@@ -10,47 +10,36 @@
   <script src="js/version.js"></script>
   <script src="js/audio.js"></script>
   <link rel="icon" href="images/favicon.ico?v=1.1">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/topnav.css">
+  <link rel="stylesheet" href="styles/font.css">
   <link rel="stylesheet" href="styles/release.css">
 </head>
 
-<body onload="CountDownTimer('02/25/2024 09:00 AM', 'countdown'); readTextFile('version.txt')">
-  <div class="w3-top op">
-    <div class="w3-row w3-large">
-      <div class="w3-col s3">
-        <div class=" w3-block">&nbsp;</div>
-      </div>
-      <div class="w3-col s3">
-        <a href="register" class="w3-button w3-block">Register for beta</a>
-      </div>
-      <div class="w3-col s3">
-        <a href="trynow" class="w3-button w3-block">Try now</a>
-      </div>
-      <div class="w3-col s3">
-        <div class=" w3-block">&nbsp;</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="parent w3-display-container w3-animate-opacity w3-text-white">
-    <div class="child w3-display-middle"> </div>
-    <div class="w3-display-bottomleft w3-padding-large w3-xlarge">
-      <div style="background-image: url(images/battle-icon.png)"></div>
-      <img class="disable" src="images/battle-icon.png" width="200px" height="200px">
-    </div>
-    <div class="w3-display-bottomright w3-padding-large w3-xlarge">
-      <img class="disable" src="images/sars-icon.jpg" width="200px" height="200px" style="opacity: .5;">
-    </div>
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      <br>
-      <h1 id="version">version.txt</h1>
+<body onload="CountDownTimer('02/25/2024 09:00 AM', 'countdown'); ">
+  <div class="noflow">
+    <div class="topnav">
+      <a href="release" class="active disable">Release</a>
+      <a href="trynow">Try Now!</a>
     </div>
     <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">Battleground X</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center" style="display: inline-block;">Remaining time for publish: &nbsp;
-      <div class="w3-large w3-center" style="display:inline-block;" id="countdown"></div>
-      </p>
+      <div class="w3-animate-top">
+        <h1 class="w3-jumbo">Project Battleground X !</h1>
+        <hr class="w3-border-white" />
+        <p class="w3-xlarge w3-center" style="display: inline-block;">Remaining time for publish: &nbsp;
+        <div class="w3-xlarge w3-center" style="display:inline-block; color: black;" id="countdown"></div>
+        </p>
+      </div>
     </div>
+    <div class="w3-display-bottomleft w3-padding-large w3-xlarge">
+      <img class="disable image_op" src="images/battle-icon.png" style="height:20vw; max-height:200px;">
+    </div>
+    <div class="w3-display-bottomright w3-padding-large ">
+      <a href="https://sarsyazilim.com.tr">
+        <img class="image_op" src="images/sars.jpg" style="height:20vw; max-height:200px;">
+      </a>
+    </div>
+    <div class="background" />
   </div>
 </body>
 
